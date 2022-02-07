@@ -2,7 +2,7 @@ $(document).ready(onInit);
 
 function onInit() {
   console.log('Starting');
-  $('.contact-form').submit(onHandleSubmit);
+  $('.contact-form button').on('click', onHandleSubmit);
   renderProjects();
 }
 
@@ -39,11 +39,13 @@ function renderModal() {
   $('.text-success').attr('target', '_blank');
 }
 
-function onHandleSubmit(ev) {
-  ev.preventDefault();
-  var email = $(ev.target[0]).val();
-  var subj = $(ev.target[1]).val();
-  var msgBody = $(this).find('textarea').val() + 'Email sent from: ' + email;
+function onHandleSubmit() {
+  var email = $('.contact-form input[type="email"]').val();
+  var subj = $('.contact-form input[type="text"]').val();
+  var msgBody = $('.contact-form textarea').val() + '___Email sent from: ' + email;
   var emailUrl = `https://mail.google.com/mail/u/0/?fs=1&to=lioramar55@gmail.com&su=${subj}&body=${msgBody}&tf=cm`;
   window.open(emailUrl);
+  $('.contact-form input[type="email"]').val('');
+  $('.contact-form input[type="text"]').val('');
+  $('.contact-form textarea').val('');
 }
