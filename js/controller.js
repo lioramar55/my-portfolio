@@ -2,6 +2,7 @@ $(document).ready(onInit);
 
 function onInit() {
   console.log('Starting');
+  $('.contact-form').submit(onHandleSubmit);
   renderProjects();
 }
 
@@ -36,4 +37,13 @@ function renderModal() {
   $('.proj-desc').text(proj.desc);
   $('.text-success').attr('href', 'https://lioramar55.github.io/' + proj.id);
   $('.text-success').attr('target', '_blank');
+}
+
+function onHandleSubmit(ev) {
+  ev.preventDefault();
+  var email = $(ev.target[0]).val();
+  var subj = $(ev.target[1]).val();
+  var msgBody = $(this).find('textarea').val() + 'Email sent from: ' + email;
+  var emailUrl = `https://mail.google.com/mail/u/0/?fs=1&to=lioramar55@gmail.com&su=${subj}&body=${msgBody}&tf=cm`;
+  window.open(emailUrl);
 }
