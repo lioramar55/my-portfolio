@@ -10,7 +10,7 @@ p {
 a {
   color: #fed136;
 }
-a.active,
+
 a:active,
 a:focus,
 a:hover {
@@ -27,7 +27,7 @@ h6 {
   text-transform: uppercase;
 }
 section {
-  padding: 100px 0;
+  padding: 5rem 0;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -95,8 +95,6 @@ body {
   width: 80vw;
   right: -80vw;
   background: linear-gradient(to right, #637588, #56616d);
-
-  /* background: linear-gradient(to right, #e44d26, #f16529); */
   z-index: 10;
   transition: all 0.3s ease;
   display: flex;
@@ -136,9 +134,8 @@ body {
   right: 0;
   padding: 13px;
   cursor: pointer;
-
   text-transform: uppercase;
-  color: white;
+  color: #3e4750;
   border: 0;
   background-color: #fed136;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -149,7 +146,6 @@ body {
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 #mainNav .navbar-brand.active,
-#mainNav .navbar-brand:active,
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
   color: #fec503;
@@ -674,18 +670,10 @@ ul.social-buttons li a:hover {
   border-color: #b48b01;
   background-color: #dcab01;
 }
-.btn-primary.active,
-.btn-primary:active,
-.open > .btn-primary.dropdown-toggle {
-  background-image: none;
-}
-.btn-primary.disabled.focus,
-.btn-primary.disabled:focus,
+
 .btn-primary.disabled:hover,
-.btn-primary[disabled].focus,
 .btn-primary[disabled]:focus,
 .btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover {
   border-color: #fed136;
@@ -703,12 +691,12 @@ fieldset[disabled] .btn-primary:hover {
   color: #29323c;
   border-color: #fed136;
   background-color: #fed136;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue';
   text-transform: uppercase;
 }
 .btn-xl.focus,
 .btn-xl:focus {
-  color: white;
+  color: #29323c;
   border-color: #b48b01;
   background-color: #fec503;
 }
@@ -717,38 +705,25 @@ fieldset[disabled] .btn-primary:hover {
   border-color: #f6bf01;
   background-color: #fec503;
 }
-.btn-xl.active,
 .btn-xl:active,
 .open > .btn-xl.dropdown-toggle {
-  color: white;
+  color: #29323c;
   border-color: #f6bf01;
   background-color: #fec503;
 }
-.btn-xl.active.focus,
 .btn-xl.active:focus,
-.btn-xl.active:hover,
-.btn-xl:active.focus,
-.btn-xl:active:focus,
 .btn-xl:active:hover,
-.open > .btn-xl.dropdown-toggle.focus,
 .open > .btn-xl.dropdown-toggle:focus,
 .open > .btn-xl.dropdown-toggle:hover {
   color: white;
   border-color: #b48b01;
   background-color: #dcab01;
 }
-.btn-xl.active,
-.btn-xl:active,
-.open > .btn-xl.dropdown-toggle {
-  background-image: none;
-}
-.btn-xl.disabled.focus,
+
 .btn-xl.disabled:focus,
 .btn-xl.disabled:hover,
-.btn-xl[disabled].focus,
 .btn-xl[disabled]:focus,
 .btn-xl[disabled]:hover,
-fieldset[disabled] .btn-xl.focus,
 fieldset[disabled] .btn-xl:focus,
 fieldset[disabled] .btn-xl:hover {
   border-color: #fed136;
