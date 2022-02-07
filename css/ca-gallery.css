@@ -90,10 +90,13 @@ body {
 }
 .offcanvas-aside {
   position: fixed;
+  color: white;
   height: 100%;
   width: 80vw;
   right: -80vw;
-  background: linear-gradient(to right, #e44d26, #f16529);
+  background: linear-gradient(to right, #637588, #56616d);
+
+  /* background: linear-gradient(to right, #e44d26, #f16529); */
   z-index: 10;
   transition: all 0.3s ease;
   display: flex;
@@ -132,6 +135,8 @@ body {
   font-size: 12px;
   right: 0;
   padding: 13px;
+  cursor: pointer;
+
   text-transform: uppercase;
   color: white;
   border: 0;
@@ -194,14 +199,20 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url('../img/header-bg.jpg');
+  background: linear-gradient(
+    to right,
+    #485563,
+    #29323c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
 }
 header.masthead .intro-text {
   padding-top: 150px;
