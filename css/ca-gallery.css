@@ -199,20 +199,7 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background: linear-gradient(
-    to right,
-    #485563,
-    #29323c
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  /* background-image: url('../img/header-bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
+  background: linear-gradient(to right, #485563, #29323c);
 }
 header.masthead .intro-text {
   padding-top: 150px;
@@ -713,7 +700,7 @@ fieldset[disabled] .btn-primary:hover {
   font-weight: 700;
   padding: 20px 40px;
   border-radius: 3px;
-  color: white;
+  color: #29323c;
   border-color: #fed136;
   background-color: #fed136;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
