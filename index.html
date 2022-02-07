@@ -196,48 +196,41 @@
 
     <!-- Footer -->
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 flex-align-center">
-            <a href="http://coding-academy.org" target="_blank">
-              <img src="./img/ca-logo.png" alt="" />
-            </a>
-          </div>
-          <div class="col-md-4 flex-align-center">
-            <ul class="list-inline social-buttons flex-align-center">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item flex-align-center">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 flex-align-center">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">More Me</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Even More</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <div class="container">Built by Lior Amar 2022 &copy;</div>
     </footer>
 
     <!-- Portfolio Modals -->
-    <div class="portfolio-modals"></div>
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal">
+                  <img class="img-fluid" src="" alt="website image" />
+                </a>
+                <div class="portfolio-caption">
+                  <h4></h4>
+                  <a class="text-success">Try it yourself</a>
+                  <p class="proj-desc"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

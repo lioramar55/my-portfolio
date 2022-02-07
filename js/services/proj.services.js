@@ -2,20 +2,20 @@
 
 var gProjs = [
   {
-    id: 'minesweepr',
+    id: 'minesweeper',
     name: 'Minesweeper',
     title: 'Minesweeper Game',
     desc: 'A minesweepr game with extra features that i built using vanilla JS',
-    url: 'minesweeper.PNG',
+    imgUrl: 'minesweeper.PNG',
     publishedAt: 1448693940000,
     labels: ['Matrixes', 'keyboard events'],
   },
   {
-    id: 'pacman',
+    id: 'my-pacman',
     name: 'Pacman',
     title: 'Pacman Game',
     desc: 'A pacman game using vanilla JS',
-    url: 'pacman.PNG',
+    imgUrl: 'pacman.PNG',
     publishedAt: 1448693940000,
     labels: ['Matrixes', 'keyboard events'],
   },
@@ -24,7 +24,7 @@ var gProjs = [
     name: 'To-do App',
     title: 'A Simple To-do App',
     desc: 'A simple to-do app game using vanilla JS',
-    url: 'todo-app.PNG',
+    imgUrl: 'todo-app.PNG',
     publishedAt: 1448693940000,
     labels: ['Matrixes', 'keyboard events'],
   },
@@ -33,7 +33,7 @@ var gProjs = [
     name: 'Login-Dashboard',
     title: 'A simple login dashboard',
     desc: 'A simple login dashboard using vanilla JS.\n When trying it try loging into a user with (username: puki, password:1234) and then with username:admin , password: 1234',
-    url: 'login-dashboard.PNG',
+    imgUrl: 'login-dashboard.PNG',
     publishedAt: 1448693940000,
     labels: ['Matrixes', 'keyboard events'],
   },
@@ -42,7 +42,7 @@ var gProjs = [
     name: 'Book Shop CRUDL',
     title: 'Simple Book Shop',
     desc: 'A book shop implementing CRUD,  using vanilla JS',
-    url: 'books-crud.PNG',
+    imgUrl: 'books-crud.PNG',
     publishedAt: 1448693940000,
     labels: ['Matrixes', 'keyboard events'],
   },
@@ -50,4 +50,8 @@ var gProjs = [
 
 function getProjsForDisplay() {
   return gProjs;
+}
+
+function getProjByName(name) {
+  return gProjs.find((proj) => name === proj.name);
 }
