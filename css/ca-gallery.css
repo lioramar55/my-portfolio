@@ -316,12 +316,12 @@ header.masthead .intro-text .intro-heading {
 }
 .portfolio-modal .modal-dialog {
   max-width: none;
-  height: 100%;
+  height: auto;
   margin: 0;
 }
 .portfolio-modal .modal-content {
   min-height: 100%;
-  padding: 100px 0;
+  padding-top: 5vh;
   text-align: center;
   border: none;
   border-radius: 0;

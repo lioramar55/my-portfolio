@@ -9,14 +9,14 @@ function renderProjects() {
   var projs = getProjsForDisplay();
   var strHTML = projs.map((proj) => {
     return `
-    <div class="col-md-4 col-sm-6 portfolio-item h-50" data-proj="${proj.name}">
+    <div class="col-md-4 col-sm-6 portfolio-item" data-proj="${proj.name}">
       <a class="portfolio-link" data-toggle="modal" href="#portfolioModal">
         <div class="portfolio-hover">
           <div class="portfolio-hover-content">
             <i class="fa fa-plus fa-3x"></i>
           </div>
         </div>
-        <img class="img-fluid" src="img/portfolio/${proj.imgUrl}" alt="${proj.name} website image" />
+        <img  class="img-fluid" src="img/portfolio/${proj.imgUrl}" alt="${proj.name} website image" />
       </a>
       <div class="portfolio-caption">
         <h4>${proj.name}</h4>
