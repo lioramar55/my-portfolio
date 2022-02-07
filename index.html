@@ -42,10 +42,36 @@
     <div class="offcanvas-btn" onClick="openCanvas()">
       <i class="fa fa-comment" aria-hidden="true"></i>
     </div>
-    <aside class="offcanvas-aside">
+    <aside class="offcanvas-aside p-5 text-center">
       <!-- Contact -->
       <section id="contact">
         <h4>Contact Me</h4>
+        <form class="contact-form">
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" placeholder="example@gmail.com" name="email" />
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Your Subject</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Type subject here..."
+              name="subject"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="msg" class="form-label">Message Body</label>
+            <textarea
+              rows="4"
+              cols="30"
+              name="comment"
+              placeholder="Enter text here..."
+              form="usrform"
+            ></textarea>
+          </div>
+          <button class="btn btn-success" style="cursor: pointer" type="submit">Contact</button>
+        </form>
       </section>
     </aside>
 
@@ -215,7 +241,7 @@
             </div>
           </div>
           <div class="container">
-            <div class="row">
+            <div class="d-flex flex-column align-items-center">
               <div class="col-md-4 col-sm-6 portfolio-item">
                 <a class="portfolio-link" data-toggle="modal" href="#portfolioModal">
                   <img class="img-fluid" src="" alt="website image" />
