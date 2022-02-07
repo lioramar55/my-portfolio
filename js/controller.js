@@ -1,7 +1,6 @@
 $(document).ready(onInit);
 
 function onInit() {
-  console.log('Starting');
   $('.contact-form button').on('click', onHandleSubmit);
   renderProjects();
 }
@@ -10,7 +9,7 @@ function renderProjects() {
   var projs = getProjsForDisplay();
   var strHTML = projs.map((proj) => {
     return `
-    <div class="col-md-4 col-sm-6 portfolio-item" data-proj="${proj.name}">
+    <div class="col-md-4 col-sm-6 portfolio-item h-50" data-proj="${proj.name}">
       <a class="portfolio-link" data-toggle="modal" href="#portfolioModal">
         <div class="portfolio-hover">
           <div class="portfolio-hover-content">

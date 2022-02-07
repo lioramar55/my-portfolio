@@ -46,6 +46,15 @@ var gProjs = [
     publishedAt: 1448693940000,
     labels: ['Matrixes', 'keyboard events'],
   },
+  {
+    id: 'study-projects/touch-nums/index.html',
+    name: 'Touch-Nums',
+    title: 'Touch Nums Game',
+    desc: 'Try to complete each level to test your reflex speed and measure your time.',
+    imgUrl: 'touch-nums.PNG',
+    publishedAt: 1448693940000,
+    labels: ['Matrixes', 'keyboard events'],
+  },
 ];
 
 function getProjsForDisplay() {
