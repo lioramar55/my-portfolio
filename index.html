@@ -44,7 +44,7 @@
     </div>
     <aside class="offcanvas-aside p-5 text-center">
       <!-- Contact -->
-      <section id="contact">
+      <section id="contact" id="mainNav">
         <h4>Contact Me</h4>
         <form class="contact-form">
           <div class="mb-3">
@@ -101,7 +101,9 @@
               <a class="nav-link js-scroll-trigger" href="#me">Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" onClick="openCanvas()" href="#contact"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -184,7 +186,7 @@
     <!-- Me -->
     <section class="bg-light" id="me" style="padding: 0px">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 mb-5">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/me.jfif" alt="" />
             <h4>Lior Amar</h4>
