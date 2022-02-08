@@ -34,8 +34,8 @@ function renderModal() {
   $('.modal-dialog img').attr('src', 'img/portfolio/' + proj.imgUrl);
   $('.modal-dialog h4').text(proj.title);
   $('.proj-desc').text(proj.desc);
-  $('.text-success').attr('href', 'https://lioramar55.github.io/' + proj.id);
-  $('.text-success').attr('target', '_blank');
+  $('.move-to-project').attr('href', 'https://lioramar55.github.io/' + proj.id);
+  $('.move-to-project').attr('target', '_blank');
 }
 
 function onHandleSubmit() {
