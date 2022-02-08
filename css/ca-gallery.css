@@ -562,6 +562,8 @@ header.masthead .intro-text .intro-heading {
 }
 .team-member img {
   width: 225px;
+  object-fit: cover;
+  object-position: top;
   height: 225px;
   border: 7px solid white;
 }
